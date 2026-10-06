@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Min Filter — নিরাপদ ইন্টারনেট, সুন্দর ভবিষ্যৎ</title>
+  <meta name="description" content="Min Filter is an Android VPN-based domain filtering project for safer internet use.">
+  <style>
+    :root{color-scheme:dark;--bg:#0a0c26;--panel:#161941;--accent:#7446ff;--cyan:#30e0cc;--muted:#b9bdd8}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(135deg,#0a0c26,#201458 55%,#0d2d48);color:#fff}
+    main{max-width:980px;margin:auto;padding:56px 20px}.hero,.card{background:rgba(22,25,65,.88);border:1px solid rgba(116,70,255,.35);border-radius:24px;padding:28px;box-shadow:0 18px 60px rgba(0,0,0,.25)}
+    h1{font-size:clamp(34px,8vw,64px);margin:0 0 12px}.tag{color:var(--cyan);font-weight:700}.lead{font-size:20px;line-height:1.6;color:var(--muted)}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}a{display:inline-block;padding:12px 18px;border-radius:999px;background:var(--accent);color:white;text-decoration:none;font-weight:700}a.alt{background:transparent;border:1px solid #59609e}
+    section{margin-top:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card h2{margin-top:0}.card p,.card li{color:var(--muted);line-height:1.6}
+    code{color:#fff;background:#0b0d2c;padding:2px 6px;border-radius:6px}.small{font-size:14px;color:#9da2c4}
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero" id="github">
+    <div class="tag">MIN FILTER</div>
+    <h1>নিরাপদ ইন্টারনেট, সুন্দর ভবিষ্যৎ</h1>
+    <p class="lead">Android-এর জন্য VPN-ভিত্তিক domain/DNS filtering MVP। এক ট্যাপে protection চালু করা, নির্বাচিত domain block করা, trusted domain whitelist এবং custom blocklist—সব এক জায়গায়।</p>
+    <div class="buttons">
+      <a href="#github" aria-label="GitHub repository">GitHub</a>
+      <a class="alt" href="../README.md">Documentation</a>
+    </div>
+  </section>
+  <section class="grid">
+    <div class="card"><h2>Web / DNS</h2><p>Domain-based rules এবং family-friendly upstream DNS ব্যবহার করে filtering।</p></div>
+    <div class="card"><h2>Short-video</h2><p>TikTok, Likee, SnackVideo ও Kwai-এর নির্বাচিত domain block করা যায়।</p></div>
+    <div class="card"><h2>Whitelist</h2><p>Trusted domain list থাকলে সেটি reject rules-এর আগে DIRECT হিসেবে প্রয়োগ হয়।</p></div>
+    <div class="card"><h2>Custom blocklist</h2><p>নিজের domain list যোগ করে protection চালু অবস্থায় rules restart করা যায়।</p></div>
+  </section>
+  <section class="card">
+    <h2>গুরুত্বপূর্ণ সীমাবদ্ধতা</h2>
+    <ul>
+      <li>এটি content classifier বা antivirus নয়।</li>
+      <li>Direct-IP traffic এবং domain signal না পাওয়া encrypted traffic সবসময় domain দিয়ে চেনা সম্ভব নয়।</li>
+      <li>YouTube Shorts / Instagram Reels-কে parent domain-এর HTTPS traffic থেকে নির্ভরযোগ্যভাবে আলাদা করা যায় না; তাই পুরো domain block option দেওয়া হয়েছে।</li>
+      <li>বাস্তব Android device, Wi-Fi/mobile-data এবং OEM-specific behaviour পরীক্ষা ছাড়া production release দাবি করা যাবে না।</li>
+    </ul>
+  </section>
+  <p class="small">Min Filter v1.5.2 • Network engine: libmihomo-android v0.3.5. Public distribution-এর আগে third-party license obligations পর্যালোচনা করুন।</p>
+</main>
+</body>
+</html>
